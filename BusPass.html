@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0%; padding: 0%; width: 100%;">
+    <form action="Registered.html" method="get" width="100%">
+        <div style=" margin-left: 3rem; margin-right: 3rem; padding: 1rem;">
+            <div style="display: flex; flex-direction: column; align-items: center; background-color: rgb(167, 202, 223); border-radius: 2rem; padding: 1rem;">
+                <img src="logo.jpg" height="75px" width="75px" alt="logo">
+                <h3 style="color: blue;">TELANGANA STATE BOARD TRANSPORT VORPORATION </h3>
+                <H2>GENERAL BUS PASS APPLICATION</H2>
+
+            </div><br>
+
+            <div style="width: 100%; border-radius: 3rem;">
+
+                <fieldset style="width: 100%;  border-radius: 2rem;">
+                    <legend style="color: white; background-color: rgb(25, 69, 113); border-radius: 0.5rem; padding: 0.3rem;">
+                        Application Details
+                    </legend>
+                    <table style="width: 90%; justify-content: space-around;">
+                        <tr>
+                            <td>Name*</td>
+                            <td><input type="text" size="20" pattern="[a-zA-Z]+" title="(Maximum Characters 20)" maxlength="20" name="Name" required></td>
+                            <td>Father's/Guardian's name*</td>
+                            <td><input type="text" size="20" pattern="[a-zA-Z]+" name="GuardiansName" required></td>
+
+                        </tr>
+                        <tr>
+                            <td>Date of birth*</td>
+                            <td><input type="date" name="date" required></td>
+                            <td>Gender*</td>
+                            <td><input type="radio" value="male" name="gender">male <input type="radio" value="female" name="gender">female</td>
+                        </tr>
+                        <tr>
+                            <td>Age:</td>
+                            <td><input type="text" size="1" pattern="[0-9]{2}">Year(s)<input type="text" size="1" pattern="[0-9]{2}">Months(s)<input type="text" size="1" pattern="[0-9]{2}">Days(s)</td>
+                            <td>Aadhaar No:</td>
+                            <td> <input type="text" pattern="[0-9]{12}" size="20"></td>
+                        </tr>
+                        <tr>
+                            <td>WhatsApp No*</td>
+                            <td> <input type="text" pattern="[6-9][0-9]{9}" size="20" name="contact" required></td>
+                            <td>Email Id*</td>
+                            <td> <input type="email" size="20" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td>Photo*</td>
+                            <td><input type="file" required ></td>
+                        </tr>
+                    </table>
+
+                </fieldset>
+            </div>
+
+            <div style="width: 100%; border-radius: 3rem;">
+
+                <fieldset style="width: 100%; border-radius: 2rem;">
+                    <legend style="color: white; background-color: rgb(25, 69, 113); border-radius: 0.5rem; padding: 0.3rem;">
+                        Residential Address Details
+                    </legend>
+                    <table style="width: 90%; justify-content: space-around;" >
+                        <tr>
+                            <td>Applicants Address*</td>
+                            <td><textarea rows="5" cols="20" title="(maximum Characters 20)" required></textarea></td>
+                            <td>District*</td>
+                            <td><select name="district" required>
+                                <option value="HYDERABAD" >HYDERABAD</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Mandal*</td>
+                            <td><select name="Mandal" required>
+                                <option value="HYDERABAD" selected>HYDERABAD</option>
+                            </select></td>
+                            <td>Village*</td>
+                            <td><select name="Village" required>
+                            <OPtion value="HYDERABAD" selected>HYDERABAD</OPtion>
+                                <OPtion value="JAYADARSHINI">JAYADARSHINI</OPtion>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Pincode*</td>
+                            <td><input type="text" pattern="[0-9]{6}" size="20" name="pincode" required></td>
+                        </tr>
+
+
+                    </table>
+                </fieldset>
+            </div>
+
+            <div style="width: 100%; border-radius: 3rem;">
+
+                <fieldset style="width: 100%; border-radius: 2rem;">
+                    <legend style="color: white; background-color: rgb(25, 69, 113); border-radius: 0.5rem; padding: 0.3rem;">
+                        Pass Type Details</legend>
+                    <table style="width: 90%; justify-content: space-around;">
+                        <tr>
+                            <td>City*</td>
+                            <td><select name="City" required>
+                                <option value="HYDERABAD" >HYDERABAD</option>
+                            </select></td>
+
+                        </tr>
+                        <tr>
+                            <td>Pass Type*</td>
+                            <td><select name="passtype" required>
+                                <option value="" disabled selected >------SELECT------</option>
+                                <option value="GREATER PASS">GREATER PASS</option>
+                                <option value="GREATER METRO"GREATER PASS METRO></option>
+                                <option value="ORDINARY PASS">ORDINARY PASS"</option>
+                                <option value="METRO EXPRESS PASS">METRO EXPRESS PASS</option>
+                                <option value="METRO DELUXE PASS">METRO DELUXE PASS</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+                
+            <div style="width: 100%; border-radius: 3rem;">
+
+                <fieldset style="width: 100%; border-radius: 2rem;  ">
+                    <legend style="color: white; background-color: rgb(25, 69, 113); border-radius: 0.5rem; padding: 0.3rem;">
+                        Mode of Payment &Pass Collection</legend>
+                    <table style="width: 90%; justify-content: space-around;">
+                        <tr>
+                            <td>Payment Mode*</td>
+                            <td><select name="Mode" required>
+                                <option value="" selected disabled >Select Payment Mode</option>
+                                <option value="Payment at Counter">Payment at Counter</option>
+                            </select></td>
+
+                        </tr>
+                        <tr>
+                            <td>Pass Delivery Mode*</td>
+                            <td><select name="Pass Delivery Mode" required>
+                                <option value="" disabled selected >Select Pass Delivery Mode</option>
+                            <option value="At Counter">At Counter</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Center At Which you want to Collect Pass*
+                            </td>
+                            <td><select name="center" required>
+                                <option value="" disabled selected >------SELECT------</option>
+                                <option value="RTC CABIDS - HYD">RTC CABIDS - HYD</option>
+                                <option value="RTC AFZALGUNZ - HYD">RTC AFZALGUNZ - HYD></option>
+                                <option value="RTC AIRPORT - HYD">RTC AIRPORT - HYD"</option>
+                                <option value="RTC ARAMGHAR - HYD">RTC ARAMGHAR - HYD</option>
+                                <option value="RTC BALANAGAR - HYD">RTC BALANAGAR - HYD</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div><br>
+            <center><input type="submit" value="submit" style="color: white; background-color: rgb(183, 89, 89); padding: 0.5rem;"></center>
+        </div><br><br><br><br>
+    </form>
+</body>
+</html>
