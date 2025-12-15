@@ -1,0 +1,20 @@
+h3{
+    color: red;
+    background-color:  rgb(247, 117, 69);
+    padding: 3px;
+}
+#ul{
+    color: rgb(36, 35, 35);
+    background-color:  rgb(244, 152, 119);
+    padding: 2px;
+}
+#last{
+    color: blueviolet;
+    background-color: lightsteelblue;
+    padding: 3px;
+}
+#p1{
+   color: rgb(36, 35, 35);
+   background-color: rgb(187, 196, 209);
+   padding: 2px;
+}
