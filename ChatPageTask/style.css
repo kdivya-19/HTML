@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    height: 400px;
+    width: 300px;
+    border: 5px solid black;
+    margin: 10px auto;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.header{
+    display: inline-block;
+    background-color: lightgreen;
+    height: 55px;
+    width: 300px;
+    position: fixed;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin: 0px;
+    gap: 3px;
+    color: white;
+    font-size: 18px;
+}
+.header>p{
+    display: inline-block;
+    font-size: medium;
+    color: black;
+    margin: 20px 0px 0px 100px;
+}
+
+.profile{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: white;
+    width: 35px; 
+    height: 35px; 
+}
+
+.bi-arrow-left-short{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+img{
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%;
+}
+
+.bi-telephone-fill{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.bi-three-dots-vertical{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+.bi-camera-video-fill{
+    position: absolute;
+    top: 20px;
+    right: 90px;    
+}
+.text{
+    display: block;
+    margin-top: 50px;
+    height: 350px;
+    width: 100%;
+    font-size: smaller;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: lightslategray;
+}
+.textchild{
+    display: block;
+    overflow: scroll;
+    height: 310px;
+}
+
+#hd1{
+    text-align: center;
+    background-color: lightgreen;
+    position: fixed;
+    top: 60px;
+    margin-left: 120px;
+    padding: 5px;
+    border-radius: 1rem;
+    font-size: 10px;
+    
+}
+
+.mymsg{
+    width: fit-content;
+    max-width: 70%;
+    padding: 3px;
+    border-radius: 1rem;
+    margin : 40px 0px 0px auto;
+}
+
+.mymsg2{
+    width: fit-content;
+    max-width: 70%;
+    padding: 3px;
+    border-radius: 1rem;
+    margin : 0px 0px 0px auto;
+}
+
+.mymsg>p,.mymsg2>p{
+    background-color: lightblue;
+    padding: 2px 4px;
+    border-radius: 1rem;
+    font-size: smaller;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 1px;
+}
+
+.others{
+    width: fit-content;
+    max-width: 70%;
+    padding: 3px;
+    border-radius: 1rem;
+    margin : 3px auto 0px 0px;
+    font-size: smaller;
+}
+
+.others>p{
+    background-color: lightcoral;
+    padding: 2px 4px;
+    border-radius: 1rem;
+    width: fit-content;
+    margin-left: 1px;
+}
+
+#hd2{
+    text-align: center;
+    background-color: lightgreen;
+    position: sticky;
+    top: 6px;
+    margin-left: 120px;
+    padding: 5px;
+    border-radius: 1rem;
+    font-size: 10px;
+    width: fit-content;
+}
+
+
+.footer {
+    display: block;
+    background-color: white;
+    font-size: 18px;
+    position: fixed;
+    width: 250px;
+    height: 30px;
+    border-radius: 1rem;
+    margin: 2px;
+}
+
+.bi-emoji-smile{
+    position: absolute;
+    top: 4px;
+    left: 15px;
+}
+.footer>p{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 0px;
+    font-size: medium;
+    width: 80px;
+    height: 25px;
+    
+}
+.bi-camera{
+    position: absolute;
+    top: 4px;
+    right: 15px;
+}
+.bi-paperclip{
+    position:absolute;
+    top:4px;
+    right:40px;
+}
+.bi-mic-fill{
+    position: fixed;
+    margin: auto 260px;
+    padding: 5px;
+    background-color: rgb(43, 177, 43);
+    border-radius: 50%;
+}
