@@ -1,97 +1,86 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
+body{
+    margin: 0%;
+    padding: 0%;
+    color:white;
+    min-height: 100vh;
+}
+
 .container{
-    margin: 0;
-    padding: 0;
+    border: 2px solid blue;
+    text-align: center;
 }
-.image {
-    width: 100%;
-    height: 70vh;
+
+.child{
+    display: block;
+    margin: 3px;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.box{
+    display: inline-block;
     position: relative;
+    margin: 0;
 }
 
 img{
     width: 100%;
-    height: 100%;
-   
+    max-width: 250px;
+    height: auto;
 }
 
-.image>h1{
+
+h3{
+    background-color: black;
     position: absolute;
-    top: 35%;
-    left: 45%;
-    color: white;
-    width: 120px;
-    font-size: 40px;
-}
-
-.image+p, .menu>h3, .menu+p{
-    background-color: black;
-    color: white;
-    width: fit-content;
-    padding: 3px 6px;
-    margin: 50px auto;
-}
-
-.text{
-    width: 410px;
-    margin: 20px auto;
-}
-.child{
-    width: 100%;
-    margin: 5px;
-}
-.text2{
-    width: 100%;
-    background-color: lightsteelblue;
-    padding: 3px;
-}
-.menu{
-    width: 100%;
-    margin-top: 50px;
+    top: 0;
+    left: 0;
+    margin: 0; 
+    padding: 2px;
    
 }
-.button{
+
+/* 
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 2px auto;
+    width: 90%;
+    height: 90vh;
+    border:  2px solid black;
+}
+.child {
+
+    display: inline-block;
+    margin: 2px;
+    text-align: center;
+    border: solid 2px black;
     width: 100%;
-    padding: 5px;;
-    background-color: white;
+    height: 50%;
 }
-button{
-    width: 48%;
-    border: none;
-    padding: 2px;
+
+.box {
+    
+    display: inline-block;
+    position: relative;
 }
-.list{
-    margin-top: 10px;
-    border:3px solid grey;
+
+img {
+    width: 220px;
+    height: 150px
 }
-.list>p{
-    margin: 10px ;
-}
-.menu>img{
-    margin: 20px auto;
-}
-#fy{
-    display: inline;
+
+h3 {
     background-color: black;
     color: white;
-    padding: 4px;
-    width: fit-content;
-}
-input{
-    width: 80%;
-    padding: 20px;
-    margin: 10px;
-}
-#bt{
-    background-color: black;
-    color:white;
-    width: fit-content;
-    padding: 5px;
-}
-.text+p{
-    margin: 50px auto;
-    width: fit-content;
-}
+    position: absolute;
+    top: 0px;
+} */
