@@ -1,0 +1,146 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+.menuList,.search{
+    display: flex;
+    padding: 10px;
+    font-size: 15px;
+    gap: 2rem;
+}
+.search{
+    display: flex;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+img{
+    width: 100vw;
+    height: 100vh;
+}
+
+.band{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+.img1{
+    text-align: center;
+}
+
+.img1>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 0.5rem;
+}
+
+.tour {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.tour1{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+}
+#p1{
+    font-size: 30px;
+}
+.tour2{
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    
+}
+.childtour2{
+     background-color: white;
+     color: black;
+    width: 200px;
+    height: 400px;
+    padding: 5px;
+    margin-bottom: 30px;;
+}
+.childtour2>img{
+    width: 200px;
+    height: 200px;
+}
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.contact{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactHd{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactBody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin-bottom: 60px;;
+}
+
+.contact1{
+    display: flex;
+    flex-direction: column;
+}
+.contact2{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.contact2child1{
+    display: flex;
+}
+
+input{
+    margin: 5px;
+    padding: 0.5rem;
+    width: 150px;
+}
+#long{
+    width: 330px;
+}
+.contact2>button{
+    width: 100px;
+}
