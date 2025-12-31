@@ -1,0 +1,40 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border: 3px solid black;
+    width: fit-content;
+}
+
+.child1, .child2{
+    display: flex;
+}
+.children{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 30px;
+    color: darkslategray;
+   padding: 3px;
+}
+
+.child1>.children:nth-child(even),.child2>.children:nth-child(odd){
+    background-color: olivedrab;
+}
+.child1>.children:nth-child(odd),.child2>.children:nth-child(even){
+    background-color: #FFE08F;
+}
+
+.child:nth-child(7)>.children{
+    color: white;
+}
+.child:nth-child(8)>.children{
+    color: whitesmoke;
+}
+
