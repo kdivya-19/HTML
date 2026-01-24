@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.child{
+    width: 10px;
+    height: 30px;
+    background-color: black;
+    border-radius: 0.1rem;
+    transform: scaleY(2);
+    animation-name: a;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes a{
+    from{
+        transform: scaleY(0.5);
+    }
+    to{
+        transform: scaleY(6);
+    }
+}
+
+.child-2, .child-6{
+    animation-delay: 0.5s;
+}
+.child-3, .child-7{
+    animation-delay: 0.3s;
+}
+
+.child-4{
+    animation-delay: 0.6s;
+}
+.child-4{
+    animation-delay: 0.2s;
+}
