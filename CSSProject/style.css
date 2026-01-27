@@ -69,8 +69,12 @@ ul{
 
 .img-container{
     display: grid;
-    justify-items: center;
+    justify-content: center;
     overflow: hidden;
+}
+
+.Container5>.img-container, .Container6>.img-container, .Container8>.img-container{
+    justify-items: center;
 }
 
 .images{
