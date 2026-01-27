@@ -1,31 +1,20 @@
 *{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    min-height: 100vh;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 .ContainerHead {
     display: grid;
-    width: 90%;
-    color: black;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
     height: 40px;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem
+    padding: 1rem;
 }
 
 .menu, ul{
     display: flex;
     justify-content: right;
-    align-items: center;
 }
 
 ul{
@@ -44,13 +33,13 @@ ul{
 
 .containers{
     display: grid;
-    width: 100vw;
-    /* grid-template-columns: repeat(50%, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     gap: 2rem;
     min-height: 100vh;
     color: slategray;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .container{
@@ -60,27 +49,30 @@ ul{
 
 .Container2, .Container5, .Container6{
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-content: center;
 }
 
 .text{
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
-    font-size: 1.25rem;
     font-weight: bolder;
     animation-name: a;
     animation-duration: 1s;
+    border: 2px solid red;
 }
 
 .text>h1{
+    font-size: 3rem;
     color: rgb(27, 26, 26);
-    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
 .img-container{
     display: grid;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
     overflow: hidden;
+    border: 2px solid blue;
 }
 
 .images{
@@ -92,9 +84,10 @@ ul{
 }
 
 img{
-    width: 100%;
-    height: 500px;
+    width: 90%;
+    height: 375px;
     object-fit: cover;
+    
 }
 
 @keyframes x{
@@ -194,19 +187,18 @@ h4{
 }
 
 .Container8{
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
 }
 .Container8>.img-container{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
+    animation: d 1s ease-in-out;
 }
 .Container8>.img-container>img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-.Container8>.img-container{
-    animation: d 1s ease-in-out;
 }
 .Container8>.img-container>img:hover{
     animation: s 0.5s ease;
@@ -246,24 +238,25 @@ h4{
 
 .Container12{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    justify-content: center;
-    align-items: center;
     padding: 10px;
+    border: 2px solid green;
+    align-items: center;
 }
 
 .Container12>.numbers{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 200px;
-    justify-content: center;
     align-items: center;
-    align-content: center;
+    justify-content: center;
     font-size: 1.5rem;
     color: black;
     font-weight: 700;
+    border: 2px solid pink;
 }
 
 .Container12>.numbers>h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 900;
     color: rgb(237, 67, 67);
 }
@@ -274,6 +267,7 @@ h4{
     color: white;
     align-items: center;
     height: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 }
 
 .Container13>.footer1{
@@ -291,14 +285,12 @@ h4{
 .Container13>.footer2 {
     display: grid;
     justify-content: center;
-    align-items: center;
 }
 .fa-brands {
     font-size: 1rem;
 }
 
 @media screen and (max-width:500px){
-    
      .menu>ul{
         display: none;
     }
@@ -353,12 +345,12 @@ h4{
         order: 1;
     }
     .text{
+        text-align: center;
         order: 2;
-        font-size: 1.25rem;
         color: slategray;
     }
     .text>h1{
-        font-size: 3rem;
+        font-size: 1.75rem;
         margin-bottom: 1rem;
     }
     .Container4{
@@ -373,9 +365,36 @@ h4{
     .Container3>p, .Container7>p{
         width: 60%;
     }
+
+    .Container8{
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .Container8>.img-container{
+        height: 70vh;
+    }
+
     .Container12{
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        padding: 5px;
     }
+    .Container12>.numbers{
+        font-size: 1rem;
+        height: 150px;
+    }
+
+    .Container12>.numbers>h1{
+        font-size: 3rem;
+    }
+
+    .Container13>.footer1{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .Container13>.footer1>.footer{
+        gap: 6px;
+    }
+
 }
 
 @keyframes y1 {
