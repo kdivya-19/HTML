@@ -75,6 +75,7 @@ ul{
     display: grid;
     justify-content: center;
     align-items: center;
+    animation: d 1s ease;
     overflow: hidden;
 }
 
@@ -92,13 +93,10 @@ ul{
 
 img{
     width: 100%;
-    height: auto;
-   display: block;
-    
-}
-.images img{
     height: 375px;
+    object-fit: cover;
 }
+
 
 @keyframes x{
    0%{
@@ -457,7 +455,7 @@ h4{
 
 @keyframes d{
     from{
-        transform: translateY(80px);
+        transform: translateY(150px);
     }
     to{
         transform: translateY(0px);
