@@ -1,6 +1,11 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .ContainerHead {
@@ -289,7 +294,7 @@ h4{
     color: white;
     align-items: center;
     height: 200px;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-columns: 1fr;
 }
 
 .Container13>.footer1{
@@ -313,6 +318,7 @@ h4{
 }
 
 @media screen and (max-width:500px){
+
      .menu>ul{
         display: none;
     }
@@ -368,7 +374,7 @@ h4{
     }
 
     .images{
-        animation: x2 12s infinite ease-in-out;
+        animation: x 12s infinite ease-in-out;
         animation-fill-mode: forwards;
     }
 
@@ -405,16 +411,20 @@ h4{
     .Container12{
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         padding: 5px;
+        align-items: center;
     }
     .Container12>.numbers{
         font-size: 1rem;
-        height: 150px;
+        min-height: 150px;
     }
 
     .Container12>.numbers>h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
+    .Container13{
+        min-height: 200px;
+    }
     .Container13>.footer1{
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
