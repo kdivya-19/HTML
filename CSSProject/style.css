@@ -374,7 +374,7 @@ h4{
     }
 
     .images{
-        animation: x 12s infinite ease-in-out;
+        animation: x2 12s infinite ease-in-out;
         animation-fill-mode: forwards;
     }
 
