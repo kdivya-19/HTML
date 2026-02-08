@@ -1,0 +1,246 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    display: grid;
+    position: relative;
+    
+}
+
+.navbar{
+    display: grid;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+.header>img{
+    margin-top: 32px;
+    width: 100%;
+    height: 100vh;
+}
+.header>p{
+    position: absolute;
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    margin: 0px;
+    top: 45%;
+    left: 35%;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+.main{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 3rem;
+    gap: 1rem;
+    line-height: 1.5rem;
+}
+.about{
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+.name>.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.name>.profile>img{
+    height:80%;
+    width: 80%;
+}
+.name>.content{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 1.5rem;
+}
+
+.Good-at{
+    display: grid;
+    width: 90%;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    padding:2rem 0 ;
+}
+.child{
+    display: grid;
+    width: 100%;
+    letter-spacing: 10px;
+    padding: 1rem;
+}
+.range{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    letter-spacing: normal;
+    height: 2rem;
+}
+.range1>p{
+    background-color: rgb(46, 45, 45);
+    width: 90%;
+    height: 2rem;
+}
+
+.range2>p{
+    background-color: rgb(46, 45, 45);
+    width: 85%;
+    height: 2rem;
+}
+.range3>p{
+    background-color: rgb(46, 45, 45);
+    width: 75%;
+    height: 2rem;
+}
+
+.numbers{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    justify-content: space-evenly;
+}
+.num-child{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#number{
+    font-size: 2rem;
+}
+.portfolio{
+    display: grid;
+    width: 100%;
+    position: relative;
+}
+.portfolio>img{
+    width: 100%;
+    height: 60vh;
+   
+}
+.portfolio>p{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: white;
+    margin: 0px;
+    letter-spacing: 10px;
+    font-size: 1.5rem;
+}
+.work{
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    gap: 1rem;
+   padding-top: 1rem;
+}
+.pictures{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.pictures>img{
+    height: 200px;
+    width: 200px;
+}
+button{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+footer{
+    display: grid;
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-items: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
+}
+
+footer>button{
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 150px;
+    border-radius: 0px;
+    margin: 10px;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+
+.details{
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.details2{
+    display: flex;
+    -ms-flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.details2>img{
+    width: 350px;
+    height: 150px;
+}
+
+@media screen and (max-width: 500px){
+    .header>img{
+        height: 30vh;
+    }
+    .header>p{
+        top: 45%;
+        left: 25%;
+        font-size: 1rem;
+    }
+    .about{
+        padding: 1rem;
+    }
+    .name{
+        grid-template-columns: 1fr;
+    }
+    .details2{
+        flex-direction: column;
+    }
+}
