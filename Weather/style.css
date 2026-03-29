@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a237e, #ff7043);
+    color: white;
+}
+
+/* Main container */
+.app {
+    text-align: center;
+}
+
+/* Temperature */
+#temp {
+    font-size: 80px;
+    font-weight: 200;
+}
+
+/* Weather icon */
+.icon {
+    font-size: 50px;
+    margin: 10px 0 20px;
+}
+
+/* Glassmorphism card */
+.card {
+    padding: 20px;
+    width: 280px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+/* Input */
+.card input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.card button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* City name */
+#cityName {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.8;
+}
